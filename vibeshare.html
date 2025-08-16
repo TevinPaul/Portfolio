@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tevin Paul | Software Developer portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <link rel="shortcut icon" href="tpf.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+
+    <header class="my-header">
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <div>
+            <a href="index.html#vibeshare" class="all-projects" id="backToProjects">← All Projects</a>
+
+        </div>
+        <div>
+            <nav id="mobile-menu">
+                <span class="back-arrow" onclick="toggleMenu()">← Back</span>
+                <a href="index.html#home" class="active">Home</a>
+                <a href="index.html#goals">Goals</a>
+                <a href="index.html#skills">Skills</a>
+                <a href="index.html#projects">Projects</a>
+                <a href="index.html#faq">FAQ</a>
+                <a href="index.html#resume">Resume</a>
+                <a href="index.html#contact">Contact</a>
+            </nav>
+        </div>
+        </div>
+    </header>
+
+    <section class="portfolio-section">
+        <div class="portfolio-page-grid">
+            <div class="portfolio-details">
+                <div>
+                    <h1 class="portfolio-heading">Photography Image Sharing Platform</h1>
+                </div>
+                <div class="all-category">
+                    <button class="category-button">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="24" color="blue" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                d="M8.64 4.737A7.97 7.97 0 0 1 12 4a7.997 7.997 0 0 1 6.933 4.006h-.738c-.65 0-1.177.25-1.177.9 0 .33 0 2.04-2.026 2.008-1.972 0-1.972-1.732-1.972-2.008 0-1.429-.787-1.65-1.752-1.923-.374-.105-.774-.218-1.166-.411-1.004-.497-1.347-1.183-1.461-1.835ZM6 4a10.06 10.06 0 0 0-2.812 3.27A9.956 9.956 0 0 0 2 12c0 5.289 4.106 9.619 9.304 9.976l.054.004a10.12 10.12 0 0 0 1.155.007h.002a10.024 10.024 0 0 0 1.5-.19 9.925 9.925 0 0 0 2.259-.754 10.041 10.041 0 0 0 4.987-5.263A9.917 9.917 0 0 0 22 12a10.025 10.025 0 0 0-.315-2.5A10.001 10.001 0 0 0 12 2a9.964 9.964 0 0 0-6 2Zm13.372 11.113a2.575 2.575 0 0 0-.75-.112h-.217A3.405 3.405 0 0 0 15 18.405v1.014a8.027 8.027 0 0 0 4.372-4.307ZM12.114 20H12A8 8 0 0 1 5.1 7.95c.95.541 1.421 1.537 1.835 2.415.209.441.403.853.637 1.162.54.712 1.063 1.019 1.591 1.328.52.305 1.047.613 1.6 1.316 1.44 1.825 1.419 4.366 1.35 5.828Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <p class="category-p">Category: Web</p>
+                    </button>
+                    <button class="date-button">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="24" color="blue" fill="none"
+                            viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 10h16M8 14h8m-4-7V4M7 7V4m10 3V4M5 20h14a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Z" />
+                        </svg>
+                        <p class="category-p">Date: August 2025</p>
+                    </button>
+                    <button class="status-button">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="24" color="blue" fill="none"
+                            viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 8v4l3 3M3.22302 14C4.13247 18.008 7.71683 21 12 21c4.9706 0 9-4.0294 9-9 0-4.97056-4.0294-9-9-9-3.72916 0-6.92858 2.26806-8.29409 5.5M7 9H3V5" />
+                        </svg>
+                        <p class="category-p">Status: Concept</p>
+                    </button>
+                </div>
+                <div class="portfolio-details-page-container">
+                    <p class="portfolio-details-page">VibeShare is a photography sharing platform where users can upload, browse
+                    and engage with images from a global community.</p>
+                </div>
+                <div class="view-demo1">
+                    <button class="view-code1">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="19" height="24" color="white" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <p class="view-demo-text1">View Code</p>
+                    </button>
+
+                    <button class="live-demo1">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="19" height="24" color="white" fill="none"
+                            viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M18 14v4.833A1.166 1.166 0 0 1 16.833 20H5.167A1.167 1.167 0 0 1 4 18.833V7.167A1.166 1.166 0 0 1 5.167 6h4.618m4.447-2H20v5.768m-7.889 2.121 7.778-7.778" />
+                        </svg>
+                        <p class="view-demo-text1">Live Demo</p>
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="portfolio-page-image-container">
+                <div>
+                    <div class="color-container">
+                        <div class="red-dot"></div>
+                        <div class="orange-dot"></div>
+                        <div class="green-dot1"></div>
+                    </div>
+                    <div>
+                        <img class="portfolio-page-image" src="images/vibeshare.png" alt="portfolio-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-goal-section">
+        <div class="project-goal-container">
+            <div class="project-goal-cont">
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="25px"
+                    fill="rgb(8, 235, 235)">
+                    <title>Target</title>
+                    <path
+                        d="M12.0005 0C18.627 0 24 5.373 24 12.0005 24 18.627 18.627 24 11.9995 24 5.373 24 0 18.627 0 11.9995 0 5.373 5.373 0 12.0005 0zm0 19.826a7.8265 7.8265 0 10-.001-15.652C7.7133 4.2246 4.2653 7.7136 4.2653 12c0 4.2864 3.448 7.7754 7.7342 7.826h.001zm0-3.9853a3.8402 3.8402 0 110-7.6803c2.1204.0006 3.839 1.7197 3.839 3.8401s-1.7186 3.8396-3.839 3.8402z" />
+                </svg>
+                <p class="project-goal-title">Project Goal & Overview</p>
+            </div>
+            <div>
+                <p class="project-overview">The goal of VibeShare is to create a platform where photographers can share, discover and engage with high quality images. This project aims to combine clean UI design with effective media handlng, offering a smoooth user experience across devices.</p>
+            </div>
+        </div>
+
+        <div class="key-features-container">
+            <div class="key-features-title">
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="25px"
+                    fill="rgb(8, 235, 235)">
+                    <title>Rocket</title>
+                    <path
+                        d="M23.735.238V.236a.248.248 0 0 0-.2-.188c-.256-.04-6.336-.924-14.17 7.051a28.44 28.44 0 0 0-2.12 2.576l-4.047 1.166a.246.246 0 0 0-.124.08l-2.856 3.5a.248.248 0 0 0 .126.394l3.887 1.096.484-.566c.178-.208.37-.4.574-.58l.54-.472-.38.608a5.556 5.556 0 0 1-.482.66l-.52.606c.008.79.214 1.488.62 2.068L3.68 19.653c-.148.16-.036.272.12.428l1.11 1.086c.153.16.255.258.41.1l1.505-1.534c.34.122 1.162.334 2.4.14l.75-.576c.212-.164.438-.312.672-.442l.644-.36-.514.53c-.187.192-.387.37-.6.534l-.62.476 1.424 3.804a.246.246 0 0 0 .404.09l3.242-3.144a.248.248 0 0 0 .072-.136l.698-4.108c.884-.78 1.78-1.686 2.66-2.694 5.072-5.806 5.798-10.315 5.78-12.487-.008-.702-.094-1.094-.1-1.122h-.002zM16.49 11.165c-1.274 1.296-3.1 1.564-4.082.6-.98-.962-.744-2.794.53-4.09s3.1-1.566 4.08-.602c.982.964.746 2.796-.528 4.092z" />
+                </svg>
+                <p class="key-features-title1">Key Features</p>
+            </div>
+            <div class="all-key-features">
+                <div>
+                    <div class="key-feature">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" id="check1" width="30" color="rgb(6, 236, 6)" height="30"
+                            fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 21a9 9 0 1 1 0-18c1.052 0 2.062.18 3 .512M7 9.577l3.923 3.923 8.5-8.5M17 14v6m-3-3h6" />
+                        </svg>
+                        <p class="key-feature-text">User account creation and profile customization</p>
+                    </div>
+                    <div class="key-feature">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" id="check1" width="30" color="rgb(6, 236, 6)" height="30"
+                            fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 21a9 9 0 1 1 0-18c1.052 0 2.062.18 3 .512M7 9.577l3.923 3.923 8.5-8.5M17 14v6m-3-3h6" />
+                        </svg>
+                        <p class="key-feature-text">Image upload with automatic resizing and optimization</p>
+                    </div>
+                    <div class="key-feature">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" id="check1" width="30" color="rgb(6, 236, 6)" height="30"
+                            fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 21a9 9 0 1 1 0-18c1.052 0 2.062.18 3 .512M7 9.577l3.923 3.923 8.5-8.5M17 14v6m-3-3h6" />
+                        </svg>
+                        <p class="key-feature-text">Categorized and searchable photo galleries</p>
+                    </div>
+                    <div class="key-feature">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" id="check1" width="30" color="rgb(6, 236, 6)" height="30"
+                            fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 21a9 9 0 1 1 0-18c1.052 0 2.062.18 3 .512M7 9.577l3.923 3.923 8.5-8.5M17 14v6m-3-3h6" />
+                        </svg>
+                        <p class="key-feature-text">Like and Comment functionality</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="key-feature">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" id="check1" width="30" color="rgb(6, 236, 6)" height="30"
+                            fill="none" c viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 21a9 9 0 1 1 0-18c1.052 0 2.062.18 3 .512M7 9.577l3.923 3.923 8.5-8.5M17 14v6m-3-3h6" />
+                        </svg>
+                        <p class="key-feature-text">Responsive, mobile friendly gallery layout</p>
+                    </div>
+                    <div class="key-feature">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" id="check1" width="30" color="rgb(6, 236, 6)" height="30"
+                            fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 21a9 9 0 1 1 0-18c1.052 0 2.062.18 3 .512M7 9.577l3.923 3.923 8.5-8.5M17 14v6m-3-3h6" />
+                        </svg>
+                        <p class="key-feature-text">Secure authentication and data protection</p>
+                    </div>
+                    <div class="key-feature">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" id="check1" width="30" color="rgb(6, 236, 6)" height="30"
+                            fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 21a9 9 0 1 1 0-18c1.052 0 2.062.18 3 .512M7 9.577l3.923 3.923 8.5-8.5M17 14v6m-3-3h6" />
+                        </svg>
+                        <p class="key-feature-text">Option to control image download permissions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="technologies-used-container">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    width="27" height="27" color="white" fill="rgb(8, 235, 235)" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd"
+                        d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z"
+                        clip-rule="evenodd" />
+                </svg>
+                <p class="technologies-used">Technologies Used</p>
+            </div>
+            <div class="techno-list-cont">
+                <p class="techno-list">React.js</p>
+                <p class="techno-list">Tailwind CSS</p>
+                <p class="techno-list">Node.js</p>
+                <p class="techno-list">MongoDB</p>
+                <p class="techno-list">Cloudinary</p>
+                <p class="techno-list">JWT</p>
+            </div>
+
+
+            <div class="lightbox" id="lightbox">
+                <span class="close-lightbox">&times;</span>
+                <img class="lightbox-content" />
+            </div>
+
+
+
+
+
+
+        </div>
+
+    </section>
+
+    <section class="last-section">
+        <div class="grid-last">
+            <div class="my-web">
+                <h1 class="last-name"><Span>T</Span>evin Paul</h1>
+                <p class="last-bio">Passionate about creating dynamic websites and applications with modern frontend
+                    technology.</p>
+            </div>
+            <div class="my-last">
+                <h1 class="last-navs">NAVIGATION</h1>
+                <a href="index.html#home" class="last-info">
+                    <p class="last-infor">Home</p>
+                </a>
+                <a href="index.html#goals" class="last-info">
+                    <p class="last-infor">Goals</p>
+                </a>
+                <a href="index.html#skills" class="last-info">
+                    <p class="last-infor">Skills</p>
+                </a>
+                <a href="index.html#faq" class="last-info">
+                    <p class="last-infor">FAQ</p>
+                </a>
+                <a href="index.html#resume" class="last-info">
+                    <p class="last-infor">Resume</p>
+                </a>
+                <a href="index.html#contact" class="last-info">
+                    <p class="last-infor">Contact</p>
+                </a>
+            </div>
+            <div class="my-last">
+                <h1 class="last-navs">SERVICES</h1>
+                <a href="index.html#frontend" class="last-info">
+                    <p class="last-infor">Frontend Development</p>
+                </a>
+                <a href="index.html#backend" class="last-info">
+                    <p class="last-infor">Full-Stack Solutions</p>
+                </a>
+                <a href="index.html#ai" class="last-info">
+                    <p class="last-infor">AI & Chatbot Integration</p>
+                </a>
+            </div>
+            <div>
+                <div>
+                    <h1 class="last-navs">CONTACT</h1>
+                </div>
+                <div class="last-contact">
+                    <div class="last-icon">
+                        <a href="#"><i class='bx bxl-gmail' onclick="event.preventDefault()"></i></a>
+                    </div>
+                    <div>
+                        <p class="last-link">tevinp.dev@gmail.com</p>
+                    </div>
+                </div>
+                <div class="last-contact">
+                    <div class="last-icon">
+                        <a href="#"><i class='bx bxl-linkedin-square' onclick="event.preventDefault()"></i></a>
+                    </div>
+                    <div>
+                        <p class="last-link">linkedin.com/in/tevinongata</p>
+                    </div>
+                </div>
+                <div class="last-contact">
+                    <div class="last-icon">
+                        <a href="#"><i class='bx bxl-github' onclick="event.preventDefault()"></i></a>
+                    </div>
+                    <div>
+                        <p class="last-link">github.com/TevinPaul</p>
+                    </div>
+                </div>
+                <div class="last-contact">
+                    <div class="last-icon">
+                        <a href="#"><i class='bx bxl-instagram' onclick="event.preventDefault()"></i></a>
+                    </div>
+                    <div>
+                        <p class="last-link">instagram.com/vib.e._</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer class="section">
+        <p class="my-footer">&copy; 2025 Vibe. All Rights Reserved.</p>
+    </footer>
+
+</body>
+<script src="script.js"></script>
+
+</html>
