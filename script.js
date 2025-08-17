@@ -353,5 +353,121 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+GitHubCalendar("#github-graph", "TevinPaul", {
+    responsive: true,
+    summary_text: "Contributions in the last year"
+});
+
+
+setTimeout(() => {
+  const days = document.querySelectorAll("#github-graph .ContributionCalendar-day");
+  let total = 0;
+  days.forEach(day => {
+    const count = parseInt(day.getAttribute("data-level")) || 0;
+    total += count;
+  });
+
+  const contribSpan = document.querySelector("#github-graph .contrib-number");
+  if (contribSpan) contribSpan.textContent = `${total} total`;
+}, 1000); 
+
+
+
+setTimeout(() => {
+  const days = document.querySelectorAll("#github-graph .ContributionCalendar-day");
+
+  let total = 0;
+  let currentStreak = 0;
+  let longestStreak = 0;
+  let tempStreak = 0;
+
+  days.forEach(day => {
+    const level = parseInt(day.getAttribute("data-level")) || 0;
   
-  
+    total += level;
+
+   
+    if (level > 0) {
+      tempStreak += 1;
+      if (tempStreak > longestStreak) longestStreak = tempStreak;
+    } else {
+      tempStreak = 0;
+    }
+  });
+
+
+  tempStreak = 0;
+  for (let i = days.length - 1; i >= 0; i--) {
+    const level = parseInt(days[i].getAttribute("data-level")) || 0;
+    if (level > 0) {
+      tempStreak += 1;
+    } else {
+      break;
+    }
+  }
+  currentStreak = tempStreak;
+
+  const contribSpan = document.querySelector("#github-graph .contrib-number");
+  if (contribSpan) contribSpan.textContent = `${total} total`;
+
+  const longestSpan = document.querySelectorAll("#github-graph .contrib-column")[1].querySelector(".contrib-number");
+  if (longestSpan) longestSpan.textContent = `${longestStreak} days`;
+
+  const currentSpan = document.querySelectorAll("#github-graph .contrib-column")[2].querySelector(".contrib-number");
+  if (currentSpan) currentSpan.textContent = `${currentStreak} days`;
+
+}, 1000);
+
+
+
+const wrapper = document.querySelector(".carousel__wrapper");
+const items = document.querySelectorAll(".carousel__item");
+const step = 360 / items.length;
+
+let angle = 0;
+let isPaused = false;
+let speed = 0.4; // adjust rotation speed
+
+function animate() {
+  if (!isPaused) {
+    angle -= speed;
+    wrapper.style.transform = `rotateY(${angle}deg)`;
+  }
+  requestAnimationFrame(animate);
+}
+
+animate();
+
+// Pause + resume logic
+items.forEach(item => {
+  item.addEventListener("mouseenter", () => { isPaused = true; });
+  item.addEventListener("mouseleave", () => { isPaused = false; });
+  item.addEventListener("click", () => { isPaused = true; }); // click keeps it stopped
+});
+
+
+function animate() {
+  if (!isPaused) {
+    angle -= speed;
+    wrapper.style.transform = `rotateY(${angle}deg)`;
+
+    items.forEach((item, i) => {
+      const itemAngle = (angle + i * step) % 360;
+      const rad = itemAngle * Math.PI / 180;
+
+      // Calculate how "facing front" it is
+      const depth = Math.cos(rad); // 1 = front, -1 = back
+
+      // Blur items that are behind (depth < 0)
+      const blur = depth < 0 ? Math.abs(depth) * 4 : 0;
+
+      // Slightly fade them too
+      const opacity = depth < 0 ? 0.5 : 1;
+
+      item.style.transform = `rotateY(${i * step}deg) translateZ(300px)`;
+      item.style.filter = `blur(${blur}px)`;
+      item.style.opacity = opacity;
+    });
+  }
+  requestAnimationFrame(animate);
+}

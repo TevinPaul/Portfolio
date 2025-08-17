@@ -7,6 +7,8 @@
     border: none;
     outline: none;
     font-family: "Inter", sans-serif;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 html {
@@ -2476,4 +2478,186 @@ body,
         width: 10px;
         height: 10px;
     }
+}
+
+/* Container styling */
+#github-graph {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.github-calendar .day[data-level="1"] {
+    fill: #c6e48b;
+}
+
+.github-calendar .day[data-level="2"] {
+    fill: #7bc96f;
+}
+
+.github-calendar .day[data-level="3"] {
+    fill: #239a3b;
+}
+
+.github-calendar .day[data-level="4"] {
+    fill: #196127;
+}
+
+.github-calendar-summary {
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
+    margin-top: 0.5rem;
+    font-weight: 500;
+}
+
+.github-calendar-summary small {
+    display: none;
+}
+
+.graph-title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #111;
+    font-weight: bold;
+}
+
+.text-muted{
+    color: rgb(0, 26, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+.contrib-column.contrib-column-first.table-column {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contrib-column .contrib-number {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1e3a0d;
+}
+
+.contrib-column .text-muted {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.Link--muted{
+    color: #06B6D4;
+}
+
+.ContributionCalendar-day{
+    border-radius: 2px;
+}
+
+@media (max-width: 800px){
+    .contrib-column{
+        margin-top: 10px;
+        padding: 0px 0px;
+    }
+}
+
+.contributions-section{
+    background: radial-gradient(circle at 30% 30%, rgba(0, 174, 255, 0.3) 0px, transparent 200px),
+            radial-gradient(circle at 70% 40%, rgba(0, 174, 255, 0.2) 0px, transparent 250px),
+            radial-gradient(circle at 50% 80%, rgba(0, 174, 255, 0.15) 0px, transparent 200px),
+            #050d1a;
+}
+
+#testim {
+    margin: 0;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.carousel {
+    position: relative;
+    width: 100vw;
+    height: 60vh;
+    perspective: 1200px;
+    overflow: hidden;
+}
+
+.carousel__wrapper {
+    width: 0;
+    height: 0;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.carousel__wrapper:hover {
+    animation-play-state: paused;
+    /* stop when hovering */
+}
+
+@keyframes spin {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+.carousel__item {
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    margin: -150px 0 0 -100px;
+    background: gray;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(248, 246, 246, 0.6);
+    transform: rotateY(calc(var(--i) * 60deg)) translateZ(400px);
+}
+
+/* Navigation buttons */
+.nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 50%;
+    backdrop-filter: blur(5px);
+}
+
+.prev {
+    left: 1rem;
+}
+
+.next {
+    right: 1rem;
+}
+
+.testimonials-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at 3% 10%, rgba(237, 241, 237, 0.2) 0px, transparent 200px),
+            radial-gradient(circle at 97% 40%, rgba(247, 5, 166, 0.342) 0px, transparent 250px),
+            radial-gradient(circle at 90% 0%, rgba(177, 8, 177, 0.493) 0px, transparent 250px),
+            radial-gradient(circle at 50% 50%, rgba(0, 162, 255, 0.39) 0px, transparent 200px),
+            radial-gradient(circle at 30% 50%, rgba(248, 113, 3, 0.342) 5px, transparent 250px),
+            #000301;
 }
