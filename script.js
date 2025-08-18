@@ -419,14 +419,13 @@ setTimeout(() => {
 }, 1000);
 
 
-
-const wrapper = document.querySelector(".carousel__wrapper");
-const items = document.querySelectorAll(".carousel__item");
+const wrapper = document.querySelector(".testimony-cont");
+const items = document.querySelectorAll(".testimony");
 const step = 360 / items.length;
 
 let angle = 0;
 let isPaused = false;
-let speed = 0.4; // adjust rotation speed
+let speed = 0.4; 
 
 function animate() {
   if (!isPaused) {
@@ -438,12 +437,34 @@ function animate() {
 
 animate();
 
-// Pause + resume logic
 items.forEach(item => {
-  item.addEventListener("mouseenter", () => { isPaused = true; });
-  item.addEventListener("mouseleave", () => { isPaused = false; });
-  item.addEventListener("click", () => { isPaused = true; }); // click keeps it stopped
+  item.addEventListener("mouseenter", () => { 
+    isPaused = true; 
+    wrapper.style.transform += " translateZ(0)";
+  });
+
+  item.addEventListener("mouseleave", () => { 
+    isPaused = false; 
+  });
+
+  item.addEventListener("click", () => { 
+    togglePause();
+  });
+
+  item.addEventListener("touchstart", (e) => { 
+    e.preventDefault();
+    togglePause();
+  });
 });
+
+function togglePause() {
+  if (isPaused) {
+    isPaused = false; 
+  } else {
+    isPaused = true;
+    wrapper.style.transform += " translateZ(0)";
+  }
+}
 
 
 function animate() {
@@ -455,16 +476,13 @@ function animate() {
       const itemAngle = (angle + i * step) % 360;
       const rad = itemAngle * Math.PI / 180;
 
-      // Calculate how "facing front" it is
-      const depth = Math.cos(rad); // 1 = front, -1 = back
+      const depth = Math.cos(rad); 
 
-      // Blur items that are behind (depth < 0)
       const blur = depth < 0 ? Math.abs(depth) * 4 : 0;
 
-      // Slightly fade them too
       const opacity = depth < 0 ? 0.5 : 1;
 
-      item.style.transform = `rotateY(${i * step}deg) translateZ(300px)`;
+      item.style.transform = `rotateY(${i * step}deg) translateZ(400px)`;
       item.style.filter = `blur(${blur}px)`;
       item.style.opacity = opacity;
     });
