@@ -2070,6 +2070,14 @@ body,
         grid-template-columns: 1fr;
         row-gap: 10px;
     }
+
+    .view-code1{
+        width: 100%;
+    }
+
+    .live-demo1{
+        width: 100%;
+    }
 }
 
 .project-goal-section{
