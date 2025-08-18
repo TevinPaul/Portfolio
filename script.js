@@ -1,29 +1,42 @@
-function toggleMenu() {
-    const menu = document.getElementById("mobile-menu");
+document.addEventListener("DOMContentLoaded", () => {
+  const menu = document.getElementById("mobile-menu");
+  const menuIcon = document.querySelector(".menu-icon");
+  const backArrow = document.querySelector(".back-arrow");
+  const navlinks = document.querySelectorAll("#mobile-menu a");
+  const sections = document.querySelectorAll("section");
+
+  function toggleMenu() {
     menu.classList.toggle("active");
-}
+  }
 
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll("nav a");
+  menuIcon.addEventListener("click", toggleMenu);
+  backArrow.addEventListener("click", toggleMenu);
 
-window.addEventListener("scroll", () => {
+  navlinks.forEach(link => {
+    link.addEventListener("click", () => {
+      menu.classList.remove("active");
+    });
+  });
+
+  window.addEventListener("scroll", () => {
     let current = "";
 
-    sections.forEach((section) => {
-        const sectionTop = section.offsetTop;
-        if (pageYOffset >= sectionTop - 60) {
-            current = section.getAttribute("id");
-        }
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      if (window.scrollY >= sectionTop - 60) {
+        current = section.getAttribute("id");
+      }
     });
 
-    navLinks.forEach((link) => {
-        link.classList.remove("active");
-        if (link.getAttribute("href").includes(current)) {
-            link.classList.add("active");
-            console.log(`Active link: ${link.textContent}`); 
-        }
+    navlinks.forEach(link => {
+      link.classList.remove("active");
+      if (link.getAttribute("href").includes(current)) {
+        link.classList.add("active");
+      }
     });
+  });
 });
+
 
 document.addEventListener('DOMContentLoaded', () => {
     const skills = document.querySelectorAll('.skills-container');
