@@ -2818,10 +2818,6 @@ body,
 }
 
 @media (max-width: 500px){
-    .testimony{
-        width: 240px;
-    }
-
     .nav-arrow{
         display: none;
     }
