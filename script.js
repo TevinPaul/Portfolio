@@ -37,6 +37,21 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+document.querySelectorAll("img").forEach(img => {
+  img.addEventListener("contextmenu", e => e.preventDefault());
+
+  img.addEventListener("dragstart", e => e.preventDefault());
+});
+
+
+document.addEventListener("keydown", function (e) {
+  if (e.ctrlKey && (e.key === "s" || e.key === "u")) {
+    e.preventDefault();
+  }
+  if (e.ctrlKey && e.shiftKey && e.key === "I") {
+    e.preventDefault();
+  }
+});
 
 document.addEventListener('DOMContentLoaded', () => {
     const skills = document.querySelectorAll('.skills-container');

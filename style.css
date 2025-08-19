@@ -36,6 +36,12 @@ body {
     text-align: center;
 }
 
+img{
+    -webkit-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+
 /*HEADER*/
 
 header {
@@ -1747,7 +1753,7 @@ body,
     }
 }
 
-@media (max-width: 400px){
+@media (max-width: 500px){
     .projects-section{
         padding-right: 20px;
         padding-left: 20px;
@@ -2033,7 +2039,7 @@ body,
     }
 }
 
-@media (max-width: 450px){
+@media (max-width: 500px){
     .portfolio-heading{
         font-size: 39px;
         line-height: 39px;
@@ -2237,7 +2243,7 @@ body,
     }
 }
 
-@media (max-width: 400px){
+@media (max-width: 500px){
     .project-goal-section{
         padding-left: 2rem;
         padding-right: 2rem;
@@ -2547,7 +2553,7 @@ body,
     margin-left: 5px;
 }
 
-@media (max-width: 400px){
+@media (max-width: 500px){
     .nav-arrow{
         font-size: 1px;
         background-color: rgba(128, 128, 128, 0.527);
@@ -2666,7 +2672,7 @@ body,
     justify-content: center;
     align-items: center;
     padding: 0;
-    height: 100vh;
+    height: 80vh;
 }
 
 .testimony-given {
@@ -2811,8 +2817,20 @@ body,
     justify-content: end;
 }
 
-@media (max-width: 400px){
+@media (max-width: 500px){
     .testimony{
         width: 220px;
+    }
+
+    .nav-arrow{
+        display: none;
+    }
+
+    .resume-section{
+        padding-bottom: 0;
+    }
+
+    .my-whole-cv{
+        padding-bottom: 15px;
     }
 }
