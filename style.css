@@ -2819,7 +2819,7 @@ body,
 
 @media (max-width: 500px){
     .testimony{
-        width: 220px;
+        width: 300px;
     }
 
     .nav-arrow{
@@ -2833,4 +2833,14 @@ body,
     .my-whole-cv{
         padding-bottom: 15px;
     }
+
+        #testim {
+            margin: 0;
+            background: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            height: 60vh;
+        }
 }
