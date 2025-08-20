@@ -2471,6 +2471,7 @@ body,
 
 
 .scanner-img{
+    border: 2px solid white;
     border-radius: 5px;
     display: block;
     max-width: 100%;
