@@ -1025,6 +1025,8 @@ body,
     line-height: 29px;
 }
 
+/*goals section*/
+
 .whole-goals{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
