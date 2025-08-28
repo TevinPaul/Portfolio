@@ -1748,6 +1748,7 @@ body,
     font-size: 14px;
 }
 
+/*responsive*/
 
 @media (max-width: 995px) {
     .project-grid {
