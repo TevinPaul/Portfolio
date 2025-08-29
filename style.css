@@ -2023,6 +2023,8 @@ body,
     margin-left: 5px;
 }
 
+/*responsive*/
+
 @media (max-width: 960px) {
     .portfolio-section {
         padding-left: 20px;
