@@ -2268,6 +2268,8 @@ body,
     }
 }
 
+/*responsive*/
+
 @media (max-width: 500px){
     .project-goal-section{
         padding-left: 2rem;
