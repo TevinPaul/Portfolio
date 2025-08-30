@@ -53,6 +53,8 @@ document.addEventListener("keydown", function (e) {
   }
 });
 
+// skills blur
+
 document.addEventListener('DOMContentLoaded', () => {
     const skills = document.querySelectorAll('.skills-container');
   
