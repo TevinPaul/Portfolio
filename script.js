@@ -140,6 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// mail submition 
 
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("contactForm");
