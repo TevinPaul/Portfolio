@@ -91,6 +91,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+// cybersecurity skills 
+
   document.addEventListener("DOMContentLoaded", () => {
   const buttons = document.querySelectorAll(".tab-btn");
   const sections = document.querySelectorAll(".whole-skills");
