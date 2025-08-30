@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-
+// faq view 
   
   document.querySelectorAll('.faq-question').forEach(question => {
     question.addEventListener('click', () => {
