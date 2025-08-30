@@ -75,6 +75,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+// home image blur
+
   document.addEventListener('DOMContentLoaded', () => {
     const homeImg = document.querySelector('.home-img');
     const bgLayer = document.querySelector('.bg-layer');
