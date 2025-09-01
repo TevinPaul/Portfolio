@@ -1,3 +1,5 @@
+'use strict';
+
 document.addEventListener("DOMContentLoaded", () => {
   const menu = document.getElementById("mobile-menu");
   const menuIcon = document.querySelector(".menu-icon");
