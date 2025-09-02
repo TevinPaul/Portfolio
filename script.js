@@ -213,7 +213,7 @@ function flickerButton(button) {
     button.classList.add('flicker');
 }  
 
-// gallery
+//project gallery
 
 function setupGallery(galleryId) {
     const gallery = document.getElementById(galleryId);
