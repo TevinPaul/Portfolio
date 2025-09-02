@@ -311,7 +311,7 @@ function setupGallery(galleryId) {
     setupGallery("myGallery");
   });
 
-// cybersecurity  
+// cybersecurity skills
   
 document.addEventListener('DOMContentLoaded', () => {
   const containers = document.querySelectorAll('.cyber-container');
