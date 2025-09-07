@@ -414,7 +414,7 @@ span {
     animation: blink 1s infinite;
 }
 
-/*Responsive*/
+/*Responsiveness*/
 
 @media(max-width:1150px){
     .menu-icon {
