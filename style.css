@@ -154,7 +154,7 @@ nav a.active {
 }
 
 #home{
-    background-image: url(images/homebg.png);
+    background-image: url(images/homebg.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -249,7 +249,7 @@ span {
 .bg-layer {
     position: absolute;
     inset: 0;
-    background-image: url('images/yoh.png');
+    background-image: url('images/yoh.webp');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
