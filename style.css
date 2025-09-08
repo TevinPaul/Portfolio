@@ -589,7 +589,7 @@ span {
     .home {
         flex-direction: column;
         padding-left: 27px;
-        padding-right: 27px;
+        padding-right: px;
         padding-top: 100px;
         padding-bottom: 30px;
     }
