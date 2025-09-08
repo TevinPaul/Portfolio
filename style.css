@@ -161,7 +161,7 @@ nav a.active {
     background-repeat: no-repeat;
 }
 
-/*MOBILE SIDE MENU*/
+/*MOBILE MENU*/
 
 @media(max-width:995px) {
     nav {
