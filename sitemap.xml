@@ -6,23 +6,18 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://tevinongata.dev/goals</loc>
+    <loc>https://tevinongata.dev/portfolio</loc>
     <lastmod>2025-09-08</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tevinongata.dev/projects</loc>
+    <loc>https://tevinongata.dev/vibeget</loc>
     <lastmod>2025-09-08</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tevinongata.dev/skills</loc>
+    <loc>https://tevinongata.dev/vibeshare</loc>
     <lastmod>2025-09-08</lastmod>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tevinongata.dev/contact</loc>
-    <lastmod>2025-09-08</lastmod>
-    <priority>0.7</priority>
   </url>
 </urlset>
