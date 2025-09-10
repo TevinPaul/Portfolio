@@ -1615,7 +1615,7 @@ body,
     padding-right: 40px;
     padding-top: 50px;
     padding-bottom: 40px; 
-    background-color: #005C9C;
+    background-color: #011a2c;
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: blur(100px);
@@ -1634,7 +1634,7 @@ body,
   background: radial-gradient(
     ellipse at top center,
     rgba(255, 255, 255, 0.85) 0%,
-    rgba(255, 255, 255, 0.2) 40%,   
+    rgba(255, 255, 255, 0.2) 20%,   
     rgba(0, 0, 0, 0.95) 80%         
   );
 
