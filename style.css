@@ -1619,30 +1619,6 @@ body,
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: blur(100px);
-    z-index: 1000;
-}
-
-.projects-section::before{
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 200%;
-  height: 200%;
-
-  background: radial-gradient(
-    ellipse at top center,
-    rgba(255, 255, 255, 0.85) 0%,
-    rgba(255, 255, 255, 0.2) 20%,   
-    rgba(0, 0, 0, 0.95) 80%         
-  );
-
-  clip-path: polygon(45% 0, 55% 0, 100% 100%, 0% 100%);
-  filter: blur(40px); 
-  opacity: 0.9;
-  pointer-events: none;
-  z-index: -10;
 }
 
 .project-grid{
