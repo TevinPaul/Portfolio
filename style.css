@@ -282,14 +282,14 @@ span {
     border-radius: 50%;
     cursor: pointer;
     transition: transform 0.3s ease, filter 0.3s ease;
-    filter: drop-shadow(0 0 10px rgb(184, 1, 184))
+    /*filter: drop-shadow(0 0 10px rgb(26, 0, 26))*/
 }
 
 .home-img img:hover {
     font-weight: 500;
     font-size: 1.8rem;
     transform: scale(1.1)translateY(-2px);
-    filter: drop-shadow(0 0 20px rgb(241, 78, 179));
+    /*filter: drop-shadow(0 0 20px rgb(15, 2, 10));*/
 }
 
 .social-icons a {
