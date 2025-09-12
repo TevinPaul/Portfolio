@@ -1607,7 +1607,7 @@ body,
     padding-right: 40px;
     padding-top: 50px;
     padding-bottom: 40px; 
-    background-color: #11002c;
+    background: linear-gradient(to bottom, #0d0b16 0%, #1a1630 50%, #0d0b16 100%);
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: blur(100px);
@@ -1623,19 +1623,24 @@ body,
 .project-container{
     width: 100%;
     border-radius: 12px;
+    border: 1px solid #1e223f;
     overflow: hidden;
-    background-color: #4b1a46;
+    background-color: #14172e69;
     cursor: pointer;
     transition: transform 0.4s ease;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .project-container:hover{
-    box-shadow: 0px 0px 20px rgba(188, 192, 192, 0.3);
+    box-shadow: 0px 0px 20px #1e223f9c;
     transform: scale(1.03);
 }
 
 .project-info{
-    padding: 20px;
+    padding-top: 15px;
 }
 
 .project-image{
@@ -1643,6 +1648,7 @@ body,
 }
 
 .actual-project-image{
+    border-radius: 10px;
     width: 100%;
     object-fit: contain;
 }
@@ -1650,12 +1656,12 @@ body,
 .project-title{
     margin-bottom: 8px;
     font-size: 28px;
-    color: #e6d4cb;
+    color: #f8f9fc;
 }
 
 .project-description{
     font-size: 14px;
-    color: rgb(168, 171, 172);
+    color: #c6c7d1;
     margin-bottom: 10px;
 }
 
@@ -1679,10 +1685,11 @@ body,
 .project-duration-info{
     margin-left: 4px;
     font-size: 12px;
+    color: #b4b5c1;
 }
 
 .project-completed{
-    background-color: rgb(4, 212, 4);
+    background-color: #007bff;
     color: white;
     padding: 4px;
     border-radius: 4px;
@@ -1696,14 +1703,14 @@ body,
 }
 
 .project-tool{
-    background-color: rgba(51, 51, 58, 0.575);
+    background-color: #2a2d3e;
     padding-left: 8px;
     padding-right: 8px;
     padding-top: 4px;
     padding-bottom: 4px;
     border-radius: 15px;
     font-size: 11px;
-    color: white;
+    color: #ffffff;
 }
 
 .view-demo{
@@ -1721,16 +1728,16 @@ body,
     justify-content: center;
     padding: 7px;
     border-radius: 5px;
-    color: white;
+    color: #ffffff;
     cursor: pointer;
 }
 
 .view-code{
-    background-color: rgba(82, 77, 77, 0.5);
+    background-color: #2a2d3e;
 }
 
 .live-demo{
-    background: linear-gradient(to right, rgba(0, 204, 255, 0.61), rgba(2, 156, 2, 0.575));
+    background: linear-gradient(to right, #4e5cff, #9d4dff);
 }
 
 .view-demo-text{
