@@ -64,7 +64,7 @@ header {
 
 .logo {
     font-size: 3rem;
-    color: #fca605;
+    color: #05cbfc;
     font-weight: 800;
     cursor: pointer;
     transition: 0.5s ease;
@@ -1797,10 +1797,7 @@ body,
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: radial-gradient(circle at 10% 20%, rgba(185, 41, 241, 0.473) 0px, transparent 200px),
-            radial-gradient(circle at 5% 60%, rgba(255, 0, 191, 0.315) 0px, transparent 250px),
-            radial-gradient(circle at 95% 20%, rgba(142, 143, 81, 0.61) 0px, transparent 200px),
-            #000301;        
+    background: linear-gradient(to bottom, #1c0292 0%, #039ffa 50%, #1c0292 100%);        
 }
 
 /*Vibeget section*/
@@ -1910,7 +1907,7 @@ body,
     font-weight: 800;
     margin-bottom: 30px;
     line-height: 60px;
-    color: #F0EDCC;
+    color: #ffffff;
 }
 
 .vibeget-heading{
@@ -1952,7 +1949,7 @@ body,
 .portfolio-details-page{
     font-size: 19px;
     line-height: 27px;
-    color: rgb(221, 219, 219);
+    color: rgb(233, 229, 229);
 }
 
 .portfolio-details-page-container{
@@ -1975,14 +1972,23 @@ body,
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 10px;
+    transition: transform 0.1s, border 0.1s;
+    border: 1px solid white;
 }
 
 .view-code1{
     background-color: rgba(99, 93, 93, 0.644);
 }
 
+.view-code1:hover,
+.live-demo1:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    border: none;
+}
+
 .live-demo1{
-    background: linear-gradient(to right, rgba(3, 255, 3, 0.925), rgba(7, 130, 245, 0.966));
+    background: linear-gradient(to right, rgb(2, 124, 53), rgb(2, 170, 44));
 }
 
 .view-demo-text1{
