@@ -394,8 +394,6 @@ GitHubCalendar("#github-graph", "TevinPaul", {
     summary_text: "Contributions in the last year"
 });
 
-// contributions
-
 setTimeout(() => {
   const days = document.querySelectorAll("#github-graph .ContributionCalendar-day");
   let total = 0;
