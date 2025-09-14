@@ -308,8 +308,6 @@ function setupGallery(galleryId) {
   document.addEventListener("DOMContentLoaded", function () {
     setupGallery("myGallery");
   });
-
-// cybersecurity skills
   
 document.addEventListener('DOMContentLoaded', () => {
   const containers = document.querySelectorAll('.cyber-container');
