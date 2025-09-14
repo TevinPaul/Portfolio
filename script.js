@@ -453,8 +453,6 @@ setTimeout(() => {
 
 }, 1000);
 
-// testimony section
-
 const wrapper = document.querySelector(".testimony-cont");
 const items = document.querySelectorAll(".testimony");
 const step = 360 / items.length;
