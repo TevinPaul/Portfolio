@@ -2186,8 +2186,6 @@ body,
     background-color: #00eeff;
 }
 
-/*responsiveness*/
-
 @media (max-width: 1071px){
     .project-goal-section{
         padding-left: 5rem;
