@@ -348,9 +348,6 @@ span {
     animation: words 20s infinite;
 }
 
-
-/*ANIMATION*/
-
 @keyframes cursor {
     to {
         border-left: 3px solid #05f2fa;
