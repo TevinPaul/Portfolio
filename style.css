@@ -284,7 +284,6 @@ span {
     font-weight: 500;
     font-size: 1.8rem;
     transform: scale(1.1)translateY(-2px);
-    /*filter: drop-shadow(0 0 20px rgb(15, 2, 10));*/
 }
 
 .social-icons a {
