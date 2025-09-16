@@ -409,8 +409,6 @@ span {
     animation: blink 1s infinite;
 }
 
-/*Responsiveness*/
-
 @media(max-width:1150px){
     .menu-icon {
             display: block;
