@@ -156,8 +156,6 @@ nav a.active {
     background-repeat: no-repeat;
 }
 
-/*MOBILE MENU*/
-
 @media(max-width:995px) {
     nav {
         position: fixed;
