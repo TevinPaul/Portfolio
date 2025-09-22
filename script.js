@@ -55,7 +55,6 @@ document.addEventListener("keydown", function (e) {
   }
 });
 
-
 document.addEventListener('DOMContentLoaded', () => {
     const skills = document.querySelectorAll('.skills-container');
   
