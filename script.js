@@ -405,7 +405,6 @@ setTimeout(() => {
 }, 1000); 
 
 
-
 setTimeout(() => {
   const days = document.querySelectorAll("#github-graph .ContributionCalendar-day");
 
