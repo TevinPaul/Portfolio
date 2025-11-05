@@ -498,7 +498,6 @@ function togglePause() {
   }
 }
 
-
 function animate() {
   if (!isPaused) {
     angle -= speed;
