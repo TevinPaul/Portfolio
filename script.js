@@ -297,8 +297,7 @@ function setupGallery(galleryId) {
     closeBtn.addEventListener("click", () => {
       lightbox.style.display = "none";
     });
-  
-  
+   
     updateMainImage(0);
     startAutoplay();
   }
