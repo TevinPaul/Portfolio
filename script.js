@@ -428,7 +428,6 @@ setTimeout(() => {
     }
   });
 
-
   tempStreak = 0;
   for (let i = days.length - 1; i >= 0; i--) {
     const level = parseInt(days[i].getAttribute("data-level")) || 0;
