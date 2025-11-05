@@ -418,7 +418,6 @@ setTimeout(() => {
     const level = parseInt(day.getAttribute("data-level")) || 0;
   
     total += level;
-
    
     if (level > 0) {
       tempStreak += 1;
