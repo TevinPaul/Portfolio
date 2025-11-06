@@ -203,7 +203,6 @@ document.addEventListener("DOMContentLoaded", function () {
         document.body.removeChild(link);
     });
 });
-  
 
 function flickerButton(button) {
     button.classList.remove('flicker');
