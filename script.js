@@ -45,7 +45,6 @@ document.querySelectorAll("img").forEach(img => {
   img.addEventListener("dragstart", e => e.preventDefault());
 });
 
-
 document.addEventListener("keydown", function (e) {
   if (e.ctrlKey && (e.key === "s" || e.key === "u")) {
     e.preventDefault();
